@@ -1,13 +1,11 @@
-package org.example.controllers
+package controllers
 
-import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.fasterxml.jackson.module.kotlin.convertValue
 import lombok.extern.slf4j.Slf4j
-import org.example.model.EventDto
-import org.example.model.MessageForEchoDto
-import org.example.servicies.ConfirmationService
-import org.example.servicies.EchoService
+import model.EventDto
+import model.MessageForEchoDto
+import servicies.ConfirmationService
+import servicies.EchoService
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.web.bind.annotation.PostMapping

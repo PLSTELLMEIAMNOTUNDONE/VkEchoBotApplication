@@ -1,8 +1,8 @@
 package controllers
 
 import configuration.TestConfig
-import org.example.model.MessageForEchoDto
-import org.example.servicies.EchoService
+import model.MessageForEchoDto
+import servicies.EchoService
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito
 import org.mockito.kotlin.times

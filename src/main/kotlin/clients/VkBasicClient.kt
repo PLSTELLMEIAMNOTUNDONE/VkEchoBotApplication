@@ -1,4 +1,4 @@
-package org.example.clients
+package clients
 
 import kotlinx.coroutines.runBlocking
 import org.springframework.beans.factory.annotation.Value

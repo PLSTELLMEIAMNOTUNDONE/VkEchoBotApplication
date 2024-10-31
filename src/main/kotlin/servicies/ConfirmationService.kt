@@ -1,6 +1,6 @@
-package org.example.servicies
+package servicies
 
-import org.example.clients.VkConfirmation
+import clients.VkConfirmation
 import org.springframework.stereotype.Service
 
 @Service

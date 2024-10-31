@@ -1,7 +1,7 @@
-package org.example.servicies
+package servicies
 
-import org.example.clients.VkMessageSender
-import org.example.model.MessageForEchoDto
+import clients.VkMessageSender
+import model.MessageForEchoDto
 import org.springframework.stereotype.Service
 
 @Service

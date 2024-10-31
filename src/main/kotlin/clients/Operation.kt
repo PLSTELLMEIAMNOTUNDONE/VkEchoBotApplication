@@ -1,4 +1,4 @@
-package org.example.clients
+package clients
 
 import org.springframework.http.HttpMethod
 import org.springframework.util.LinkedMultiValueMap

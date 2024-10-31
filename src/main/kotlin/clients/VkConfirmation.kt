@@ -1,4 +1,4 @@
-package org.example.clients
+package clients
 
 import org.springframework.stereotype.Component
 import org.springframework.util.LinkedMultiValueMap

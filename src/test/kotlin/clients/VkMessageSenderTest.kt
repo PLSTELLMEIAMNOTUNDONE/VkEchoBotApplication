@@ -1,7 +1,5 @@
 package clients
 
-import org.example.clients.VkBasicClient
-import org.example.clients.VkMessageSender
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito
 import org.springframework.http.HttpMethod
