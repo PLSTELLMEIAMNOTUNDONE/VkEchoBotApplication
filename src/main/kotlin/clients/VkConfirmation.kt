@@ -4,16 +4,15 @@ import org.springframework.stereotype.Component
 import org.springframework.util.LinkedMultiValueMap
 
 @Component
-class VkMessageSender(
-    private val vkBasicClient: VkBasicClient
-) {
-    private val operation = Operation.SEND_MESSAGE
+class VkConfirmation(
+    private val vkBasicClient: BasicClient
 
-    fun sendMessage(userId: Long, message: String): String {
+) {
+    private val operation = Operation.GET_CONFIRM_CODE
+
+    fun getConfirmationCode(groupId: Long): String {
         val params = LinkedMultiValueMap<String, String>()
-        params["user_id"] = userId.toString()
-        params["message"] = message
-        params["random_id"] = "0"
+        params["group_id"] = groupId.toString()
         return operation.action(
             params,
             vkBasicClient

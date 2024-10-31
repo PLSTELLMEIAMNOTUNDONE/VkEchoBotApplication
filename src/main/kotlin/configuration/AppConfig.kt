@@ -10,5 +10,5 @@ import org.springframework.context.annotation.Configuration
 @ComponentScan(basePackages = ["kotlin"])
 class AppConfig {
     @Bean
-    fun objectMapper() : ObjectMapper = jacksonObjectMapper()
+    fun objectMapper(): ObjectMapper = jacksonObjectMapper()
 }

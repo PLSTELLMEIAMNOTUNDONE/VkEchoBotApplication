@@ -1,4 +1,4 @@
-package clients
+package org.example.clients
 
 import kotlinx.coroutines.runBlocking
 import org.springframework.beans.factory.annotation.Value
@@ -13,10 +13,10 @@ class VkBasicClient(
     @Value("\${vk.version}") private val vkVersion: String,
     @Value("\${vk.api.address}") private val baseUrl: String,
     @Value("\${vk.access.token}") private val accessToken: String
-) {
+) : BasicClient {
 
     // private val https://<адрес-сервера>/method/<имя-API-метода>?<параметры>;
-    fun exchange(
+    override fun exchange(
         method: String,
         httpMethod: HttpMethod,
         queryParams: MultiValueMap<String, String>

@@ -7,16 +7,16 @@ import org.springframework.stereotype.Service
 @Service
 class EchoService(
     private val vkMessageSender: VkMessageSender,
-
-    ) {
+) {
     private fun echo(
         userId: Long,
         prefix: String,
         text: String
     ): String {
+
         return vkMessageSender.sendMessage(
-            userId,
-            prefix + text
+            userId = userId,
+            message = prefix + text
         )
     }
 
