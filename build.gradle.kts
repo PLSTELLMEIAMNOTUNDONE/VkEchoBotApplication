@@ -7,8 +7,14 @@ plugins {
     kotlin("jvm") version "1.9.22"
     kotlin("plugin.lombok") version "2.0.21"
     kotlin("plugin.spring") version "1.9.22"
+    application
 }
-
+application {
+    mainClass = "main.MainKt"
+}
+springBoot {
+    mainClass.set("main.Main")
+}
 group = "org.example"
 version = "1.0-SNAPSHOT"
 
